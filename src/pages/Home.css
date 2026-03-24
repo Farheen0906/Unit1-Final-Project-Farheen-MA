@@ -1,0 +1,39 @@
+/* footer Styling */
+.homepage{ 
+
+}
+.home_heading{
+
+}
+.home_about{
+
+}
+.nav-menu-btn{
+
+}
+.nav-contact-btn{
+  
+}
+.home_footer{
+  color: red;
+  padding: 36px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+}
+.home_footerdetails {
+    color:blue;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.copyright {
+  font-size: 12px;
+  color: blue;
+}
