@@ -1,0 +1,7 @@
+.message-field{
+   padding: 12px 14px;
+  border-radius: 8px;
+resize: vertical; 
+  display: flex;
+  flex-direction: column;
+}
