@@ -1,6 +1,6 @@
 //Component to display Naviagtion bar
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './NavBar.css';
 
 function NavBar() {
   return (
