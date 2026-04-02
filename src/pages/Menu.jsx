@@ -16,11 +16,7 @@ function Menu({addToCart}) {
           />
            ))}
       </div>
-
-
-    </div>
-
-
+</div>
   );
 }
 export default Menu;

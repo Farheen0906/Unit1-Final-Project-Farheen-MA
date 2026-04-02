@@ -1,23 +1,3 @@
-// import React from 'react'
-
-//  function OrderForm({cart}) {
-//   return (
-//   <div>
-//     <h2>Order Details:</h2>
-//     {cart.length===0 ? (<p>Your cart is empty </p>): (
-//       <ul>
-//         {cart.map((item,index)=> (
-//           <li key={index}>
-//             {item.title} : $ {item.price}
-//           </li>
-//         ))}
-//       </ul>
-//     )}
-// </div>
-//   );
-// }
-// export default OrderForm;
-
 import { useState } from "react";
 import Button from "./Button";
 
@@ -36,7 +16,7 @@ const [formData, setFormData]=useState({
   };
   const handlePlaceOrder = (event) => {
     event.preventDefault();
-   console.log("order placed",formData);
+   alert("order placed!!!!!");
   }
   return (
     <>

@@ -93,7 +93,15 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu  addToCart={addToCart} />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/checkout" element={<Checkout cart={cart} />} />
+          <Route path="/checkout" element={<Checkout cart={cart} 
+          removeFromCart={removeFromCart}
+          updateQuantity={updateQuantity}
+          clearCart={clearCart}
+          cartSubtotal={cartSubtotal}
+          cartTotal={cartTotal}
+          serviceFee={serviceFee} 
+          />}
+         />
         </Routes>
       </main>
     </div>
