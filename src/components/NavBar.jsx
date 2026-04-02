@@ -2,7 +2,8 @@
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar() {
+//Props: passing cartCount(total quantity of items in cart) as props from App.jsx
+function NavBar({cartCount}) {
   return (
     <header className="navbar">
    {/* Application Logo and Title */ }
@@ -25,7 +26,7 @@ function NavBar() {
  <Link to="/checkout">
 <button className='nav-cart-btn' >
 <span className='navbar-cart'>🛒Cart</span>
-<span className='navbar-cart-count'> : 0</span>
+<span className='navbar-cart-count'>{cartCount} </span>
 </button>
 </Link>
 </header>
