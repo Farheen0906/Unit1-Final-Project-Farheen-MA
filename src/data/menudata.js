@@ -11,8 +11,6 @@ export const menuItems = [
     category: 'Salads',
     serves: 2,
     price: 18,
-    vegetarian: true,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80',
   },
   {
@@ -23,8 +21,6 @@ export const menuItems = [
     category: 'Salads',
     serves: 2,
     price: 22,
-    vegetarian: true,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80',
   },
   {
@@ -35,12 +31,10 @@ export const menuItems = [
     category: 'Salads',
     serves: 2,
     price: 20,
-    vegetarian: true,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=400&q=80',
   },
 
-  // ── VEGETARIAN ─────────────────────────────────────────
+  // ----------------- VEGETARIAN -----------------------
   {
     id: 4,
     title: 'Vegetable Stir-Fry Rice Bowl',
@@ -49,8 +43,6 @@ export const menuItems = [
     category: 'Vegetarian',
     serves: 2,
     price: 24,
-    vegetarian: true,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80',
   },
   {
@@ -61,8 +53,6 @@ export const menuItems = [
     category: 'Vegetarian',
     serves: 4,
     price: 32,
-    vegetarian: true,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1615361200141-f45040f367be?w=400&q=80',
   },
   {
@@ -73,12 +63,10 @@ export const menuItems = [
     category: 'Vegetarian',
     serves: 4,
     price: 28,
-    vegetarian: true,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&q=80',
   },
 
-  // ── SEAFOOD ────────────────────────────────────────────
+  // --------------------- SEAFOOD ------------------------------
   {
     id: 7,
     title: 'Garlic Butter Shrimp Scampi',
@@ -87,8 +75,6 @@ export const menuItems = [
     category: 'Seafood',
     serves: 4,
     price: 45,
-    vegetarian: false,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1544943910-4763c5f97c7b?w=400&q=80',
   },
   {
@@ -99,8 +85,6 @@ export const menuItems = [
     category: 'Seafood',
     serves: 2,
     price: 38,
-    vegetarian: false,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80',
   },
   {
@@ -111,12 +95,10 @@ export const menuItems = [
     category: 'Seafood',
     serves: 2,
     price: 35,
-    vegetarian: false,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=400&q=80',
   },
 
-  // ── GLUTEN FREE ────────────────────────────────────────
+  // ---------------------------GLUTEN FREE -----------------------------
   {
     id: 10,
     title: 'Zucchini Noodle Pesto Bowl',
@@ -125,8 +107,6 @@ export const menuItems = [
     category: 'Gluten Free',
     serves: 2,
     price: 26,
-    vegetarian: true,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80',
   },
   {
@@ -137,8 +117,6 @@ export const menuItems = [
     category: 'Gluten Free',
     serves: 4,
     price: 29,
-    vegetarian: true,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80',
   },
 
@@ -151,8 +129,6 @@ export const menuItems = [
     category: 'Poultry',
     serves: 6,
     price: 65,
-    vegetarian: false,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c8?w=400&q=80',
   },
   {
@@ -163,8 +139,6 @@ export const menuItems = [
     category: 'Poultry',
     serves: 4,
     price: 42,
-    vegetarian: false,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&q=80',
   },
   {
@@ -175,8 +149,6 @@ export const menuItems = [
     category: 'Poultry',
     serves: 6,
     price: 48,
-    vegetarian: false,
-    glutenFree: false,
     image: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400&q=80',
   },
   {
@@ -187,8 +159,6 @@ export const menuItems = [
     category: 'Poultry',
     serves: 2,
     price: 30,
-    vegetarian: false,
-    glutenFree: true,
     image: 'https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&q=80',
   },
 ];

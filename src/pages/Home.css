@@ -23,9 +23,9 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-}
-.home_footerdetails {
-    color:blue;
+
+.home_footerdetails{
+  color:blue;
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
