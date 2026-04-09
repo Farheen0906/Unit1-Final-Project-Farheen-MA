@@ -34,7 +34,7 @@ function Contact() {
             <div className='contact-form-wrapper'>
                 <h2 className='contact-form-title'>Submit a Request</h2>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='contact-form'>
 
                     <div className='form-field'>
                         <label>Name:</label>
