@@ -31,24 +31,24 @@ function Contact() {
                 <p>Please leave us a message, if you have any question or want to place a custom order!</p>
             </div>
             <div className='contact-page-layout'></div>
-            <div>
-                <h2>Submit a Request</h2>
+            <div className='contact-form-wrapper'>
+                <h2 className='contact-form-title'>Submit a Request</h2>
 
                 <form onSubmit={handleSubmit}>
 
-                    <div>
+                    <div className='form-field'>
                         <label>Name:</label>
                         <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder='Enter Your Full Name' required />
                     </div>
-                    <div>
+                    <div className='form-field'>
                         <label>Email:</label>
                         <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} placeholder='zara@gmail.com' required />
                     </div>
-                    <div>
+                    <div className='form-field'>
                         <label>Phone:</label>
                         <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder='+1(444)-(555)-(0000)' />
                     </div>
-                    <div>
+                    <div className='form-field'>
                         <label>Query Type:</label>
                         <select id="queryType" name="queryType" value={formData.queryType} onChange={handleChange} required>
                             <option value="">Select a query type</option>
@@ -58,14 +58,14 @@ function Contact() {
                             <option value="other">Other</option>
                         </select>
                     </div>
-                    <div className='message-field'>
+                    <div className='form-field'>
                         <label>Message:</label>
                         <input type="textarea" id="message" name="message" value={formData.message}
                             onChange={handleChange}
                             placeholder="Type your message here!!!!!"
                             required />
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" className='form-submit-btn'>Submit</button>
                 </form>
             </div>
         </div>

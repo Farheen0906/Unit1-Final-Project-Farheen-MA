@@ -7,7 +7,6 @@ function Home() {
   return (
     <div>
       <section className="home_main">
-        <div className='home_main_overlay'>
         <div className='home_content'>
           <h1 className='home_heading'>Home Cooked Meals<br/>- At your Doorstep</h1>
            </div>
@@ -23,7 +22,6 @@ function Home() {
             <button className='nav-contact-btn' >Contact Us</button>
             </Link>
           </div>
-</div>
       </section>
  
  <footer className='home_footer'>
