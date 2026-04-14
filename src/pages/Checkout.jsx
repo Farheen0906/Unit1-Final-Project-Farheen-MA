@@ -1,14 +1,18 @@
-import CartTable from "../components/CartTable";
 import OrderForm from "../components/OrderForm";
+import './Checkout.css';
 
+// Props from App.jsx:
+// cart, removeFromCart, updateQuantity, clearCart, subtotal, serviceFee, total
 function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
   cartSubtotal,cartTotal, serviceFee, }) {
   return (
     <main>
+      <div className="checkout-header">
       <h1>Checkout</h1>
-
+      </div>
+      <div className="checkout-body">
       {cart.length === 0 ? (
-        <p>No items in cart</p>
+        <p className="cart-empty">No items in cart</p>
       ) : (
         <>
         <table>
@@ -42,16 +46,17 @@ function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
             ))}
           </tbody>
         </table>
+       
         <section>
           <p>Subtotal: ${cartSubtotal}</p>
           <p>Service Fee: ${serviceFee}</p>
           <h3>Total: ${cartTotal}</h3>
         </section>
-        <button onClick={clearCart}>Clear Cart</button>
-          <CartTable cart={cart} />
-          <OrderForm />
+        <button className='clear-cart-btn' onClick={clearCart}>Clear Cart</button>
+           <OrderForm />
         </>
       )}
+       </div>
     </main>
   );
 }

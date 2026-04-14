@@ -6,9 +6,9 @@ function About() {
   return (
     <div className='about-page'>
       <div className='about-page-title'>
-        <h1>About HomeCookeD</h1>
+        <h1>About Home-Cooked</h1>
         <p className='about-page-tagline'>
-          Real food, made with love, delivered to your door.
+           👩‍🍳 Real food, made with love, delivered to your door.
         </p>
       </div>
       <div className='about-page-content'>
@@ -18,7 +18,6 @@ function About() {
            Every dish is prepared the same day it is delivered — no preservatives, no shortcuts.
           </p>
       </div>
-    
        <Link to="/contact">
             <button className='about-contact-btn'>Contact Us</button>
         </Link>
