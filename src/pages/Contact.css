@@ -1,7 +1,117 @@
-.message-field{
+/* .message-field{
    padding: 12px 14px;
   border-radius: 8px;
 resize: vertical; 
   display: flex;
   flex-direction: column;
+} */
+
+.contact-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 40px;
+}
+
+.contact-page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-page-header h1 {
+  font-size: 40px;
+  color:rgb(202, 122, 122);
+  margin-bottom: 10px;
+  
+}
+
+.contact-page-header p {
+  font-size: 15px;
+  color:rgb(230, 141, 141);
+}
+
+.contact-page-layout {
+  display: grid;
+  gap:40px;
+  align-items: start;
+}
+/* Form */
+.contact-form-wrapper{
+  background:rgb(229, 227, 227);
+  border-radius:10px;
+  padding:35px;
+}
+.contact-form-title{
+  font-size: 22px;
+  margin-bottom: 24px;
+
+}
+
+.contact-form-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color:rgb(113, 34, 34);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.form-field label {
+  font-size: 15px;
+  font-weight: 500;
+  color:rgb(161, 51, 15);
+ 
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 12px 14px;
+  border:1px solid;
+  border-color:floralwhite;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:grey;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color:rgb(181, 97, 13);
+  outline: none;/* Removes the default browser glow */
+}
+
+.form-submit-btn {
+  background-color:maroon;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.form-submit-btn:hover {
+  background-color: rgb(78, 31, 31);
+ }
+@media (max-width: 768px) {
+  .contact-page__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page {
+    padding: 32px 20px 60px;
+  }
 }

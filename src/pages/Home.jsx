@@ -1,20 +1,20 @@
 //Landing page of my application
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   return (
-    <div className='homepage'>
-      <section>
-        <div className='home_heading'>
-          <h1>Home Cooked Meals,<br/>- At your Doorstep</h1>
+    <div>
+      <section className="home_main">
+        <div className='home_content'>
+          <h1 className='home_heading'>Home Cooked Meals<br/>- At your Doorstep</h1>
            </div>
           <p className='home_about'>
             We prepare fresh,clean, made from scratch meals for every occasion
             - from intimate dinners to large gatherings.
           </p>
-          <div>
+          <div className='home_buttons'>
             <Link to="/menu">
             <button className='nav-menu-btn' >View Menu</button>
             </Link>
@@ -22,16 +22,15 @@ function Home() {
             <button className='nav-contact-btn' >Contact Us</button>
             </Link>
           </div>
-       
       </section>
  
  <footer className='home_footer'>
 <div className='home_footerdetails'>
-  <p>Phone : + 1(222)(333)(4545)</p>
-  <p>email: homecooked@gmail.com</p>
-  <p>Location: 1234 summit Dr,Newark,DE 19709</p>
+  <p>📞 Phone : + 1(222)(333)(4545)</p>
+  <p>✉️ email: homecooked@gmail.com</p>
+  <p>📍 Location: 1234 summit Dr,Newark,DE 19709</p>
 </div>
-<p className='copyright'>2026 All Rights Reserved - HomeCookeD Co</p>
+<p className='copyright'> &copy; 2026 All Rights Reserved - HomeCookeD Co. </p>
  </footer>
     </div>
   );

@@ -1,64 +1,71 @@
-.navbar{
-    display:flex;
+.navbar {
+    display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding:20px 40px;
-    background-color:floralwhite;
-    color:rgb(73, 69, 69);
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: floralwhite;
+    color: rgb(73, 69, 69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 40px;
 }
-.navbar_icon{
-    font-size:xx-large;
-}
-.navbar_title{
-font-family:Georgia, 'Times New Roman', Times, serif;
-font-size: 25px;
-font-weight: bolder;
-color:rosybrown;
+
+.navbar_icon {
+    font-size: xx-large;
 }
 
-.navbar_tagline{
+.navbar_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rosybrown;
+}
+
+.navbar_tagline {
     font-size: 15px;
-    font-weight:500;
-    color:rgb(141, 64, 64);
+    font-weight: 500;
+    color: rgb(141, 64, 64);
     font-weight: bolder;
     font-family: cursive;
 
 }
 
-.navbar-links{
-    display:flex;
-    gap:40px;
+.navbar-links {
+    display: flex;
+    gap: 40px;
 }
-.nav-link{
+
+.nav-link {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color:rgb(107, 23, 23);
-   letter-spacing: 0cqh;
-   padding: 10px;
+    color: rgb(107, 23, 23);
+    letter-spacing: 0cqh;
+    padding: 10px;
 }
+
 .nav-link:hover {
-    color:rgb(76, 77, 78)
+    color: rgb(76, 77, 78)
 }
-.nav-cart-btn{
+
+.nav-cart-btn {
     display: flex;
-    align-items:center;
-    gap:6px;
-    padding:5px 10px;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
-.nav-cart-btn:hover{
+
+.nav-cart-btn:hover {
     background-color: darkgray;
 }
 
-.navbar-cart{
+.navbar-cart {
     font-size: 15px;
 }
-.navbar-cart-count{
-  display: flex;
-  align-items:center;
-justify-content: center;
-font-size: 15px;
+
+.navbar-cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
 }

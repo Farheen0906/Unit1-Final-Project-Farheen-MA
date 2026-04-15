@@ -75,7 +75,7 @@ export const menuItems = [
     category: 'Seafood',
     serves: 4,
     price: 45,
-    image: 'https://images.unsplash.com/photo-1544943910-4763c5f97c7b?w=400&q=80',
+    image: 'src/assets/garlic butter shrimp scampi.jpg',
   },
   {
     id: 8,
