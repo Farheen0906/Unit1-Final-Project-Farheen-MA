@@ -131,7 +131,7 @@ export const menuItems = [
     price: 65,
     image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c8?w=400&q=80',
   },
-  },
+
   {
     id: 13,
     title: 'Honey Garlic Chicken Thighs',
