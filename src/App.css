@@ -18,3 +18,10 @@ header,footer{
 .btn:hover{
     background:darkgreen;
 }
+/*Links have different "states" (like when you hover over them or after they have been visited).
+ To ensure the underline stays gone in every situation, target all pseudo-classes*/
+
+ a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+

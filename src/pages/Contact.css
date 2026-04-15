@@ -1,15 +1,7 @@
-/* .message-field{
-   padding: 12px 14px;
-  border-radius: 8px;
-resize: vertical; 
-  display: flex;
-  flex-direction: column;
-} */
-
 .contact-page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 48px 40px;
+  padding: 48px 40px 80px;
 }
 
 .contact-page-header {
@@ -31,7 +23,6 @@ resize: vertical;
 
 .contact-page-layout {
   display: grid;
-  gap:40px;
   align-items: start;
 }
 /* Form */
@@ -43,13 +34,6 @@ resize: vertical;
 .contact-form-title{
   font-size: 22px;
   margin-bottom: 24px;
-
-}
-
-.contact-form-title {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   color:rgb(113, 34, 34);
 }
 
@@ -106,12 +90,20 @@ resize: vertical;
 .form-submit-btn:hover {
   background-color: rgb(78, 31, 31);
  }
+ 
 @media (max-width: 768px) {
-  .contact-page__layout {
-    grid-template-columns: 1fr;
-  }
-
+  /* Tablets */
   .contact-page {
     padding: 32px 20px 60px;
+    background-color: blue;
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Small phones */
+  .contact-page {
+    padding: 14px 10px 30px;
+    background-color: red;
   }
 }
