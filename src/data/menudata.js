@@ -75,7 +75,7 @@ export const menuItems = [
     category: 'Seafood',
     serves: 4,
     price: 45,
-    image: 'https://images.unsplash.com/photo-1544943910-4763c5f97c7b?w=400&q=80',
+    image: 'src/assets/garlic butter shrimp scampi.jpg',
   },
   {
     id: 8,
@@ -129,7 +129,7 @@ export const menuItems = [
     category: 'Poultry',
     serves: 6,
     price: 65,
-    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c8?w=400&q=80',
+    image: 'src/assets/Roasted-Chicken-with-Garlic-Herbs-05.jpg',
   },
 
   {
