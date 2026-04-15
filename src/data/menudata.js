@@ -129,7 +129,7 @@ export const menuItems = [
     category: 'Poultry',
     serves: 6,
     price: 65,
-    image: 'src/assets/Herb-Roasted Whole Chicken.png',
+    image: 'src/assets/Roasted-Chicken-with-Garlic-Herbs-05.jpg',
   },
   {
     id: 13,
