@@ -6,13 +6,17 @@ import './Checkout.css';
 function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
   cartSubtotal,cartTotal, serviceFee, }) {
   return (
-    <main>
-      <div className="checkout-header">
-      <h1>Checkout</h1>
+    <div className="checkout-page">
+      <h1 className="checkout-page-title">Checkout</h1>
+  
+      <div className="checkout-page-layout">
+        {/* Left column - contact form */}
+      <div className="checkout-form">
+      <OrderForm />
       </div>
       <div className="checkout-body">
       {cart.length === 0 ? (
-        <p className="cart-empty">No items in cart</p>
+     <p className="cart-empty">No items in cart</p>
       ) : (
         <>
         <table>
@@ -31,15 +35,15 @@ function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
                 <td>{item.title}</td>
 
                 <td>
-                <button onClick={()=> updateQuantity(item.id,item.quantity-1)}> - </button>
-                {item.quantity}
-                <button onClick={()=> updateQuantity(item.id,item.quantity+1)}> + </button>
+                <button className="qty-value" onClick={()=> updateQuantity(item.id,item.quantity-1)}>- </button>
+                 {item.quantity}
+                <button className="qty-value" onClick={()=> updateQuantity(item.id,item.quantity+1)}>+ </button>
                 </td>
 
-                <td>Price:$ {item.price*item.quantity}</td>
+                <td>Price:${item.price*item.quantity}</td>
 
                 <td>
-                  <button onClick={()=> removeFromCart(item.id)}>Remove</button>
+                  <button className="qty-remove" onClick={()=> removeFromCart(item.id)}>Remove</button>
                 </td>
 
               </tr>
@@ -53,11 +57,11 @@ function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
           <h3>Total: ${cartTotal}</h3>
         </section>
         <button className='clear-cart-btn' onClick={clearCart}>Clear Cart</button>
-           <OrderForm />
         </>
       )}
        </div>
-    </main>
+       </div>
+    </div>
   );
 }
 

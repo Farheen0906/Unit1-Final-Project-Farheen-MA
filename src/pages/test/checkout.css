@@ -1,0 +1,121 @@
+.checkout-page {
+ max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 40px 80px;
+}
+.checkout-page-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: maroon;
+  padding-bottom: 12px;
+  text-align:center;
+}
+
+.checkout-page-layout{
+   display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Body */
+.checkout-body {
+  margin-bottom: 20px;
+   background:whitesmoke;
+  border-radius: 20px;
+  padding: 32px;
+
+}
+
+/* Empty cart */
+.cart-empty {
+  text-align: left;
+  font-size: 1.2rem;
+  color:rgb(208, 48, 48);
+
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color:rgb(231, 231, 236);
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 6px 10px;
+  margin: 3px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Quantity buttons */
+td button {
+  background-color: #007bff;
+}
+
+td button:hover {
+  background-color: #0056b3;
+}
+
+/* Remove button */
+td button:last-child {
+  background-color: #dc3545;
+}
+
+td button:last-child:hover {
+  background-color: #a71d2a;
+}
+
+/* Summary section */
+section {
+  border-top: 2px solid #ddd;
+  padding-top: 15px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+/* Clear cart button */
+.clear-cart-btn {
+ display: flex;
+  justify-content: flex-end; 
+  margin: 10px 0 20px auto;
+  background-color: maroon;
+
+}
+
+.clear-cart-btn:hover {
+  background-color: rgb(223, 96, 96);
+
+}

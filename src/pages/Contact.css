@@ -90,6 +90,7 @@
 .form-submit-btn:hover {
   background-color: rgb(78, 31, 31);
  }
+ 
 @media (max-width: 768px) {
   /* Tablets */
   .contact-page {
