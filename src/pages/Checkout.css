@@ -55,6 +55,7 @@ td {
 th {
   font-weight: bold;
 }
+
 /* Quantity buttons */
 .qty-btn {
   width: 26px;
@@ -68,6 +69,7 @@ th {
   justify-content: center;
   transition: background 0.2s;
 }
+
 .qty-btn:hover {
   background: whitesmoke;
   color: white;
@@ -84,7 +86,7 @@ th {
 .qty-remove {
   background: rgb(115, 24, 24);
   border: rgb(117, 19, 19);
-  color:white;
+  color: white;
   border-radius: 8px;
   font-size: 15px;
   padding: 4px;
@@ -93,7 +95,7 @@ th {
 }
 
 .qty-remove:hover {
- background-color: rgb(230, 210, 210);
+  background-color: rgb(230, 210, 210);
 }
 
 /* Summary section */
@@ -128,3 +130,28 @@ section h3 {
 .clear-cart-btn:hover {
   background-color: rgb(223, 96, 96);
 }
+
+/*  Responsive breakpoints */
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 32px 20px 60px;
+  }
+
+  /* Stack form and cart vertically */
+  .checkout-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-page-title {
+    font-size: 26px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+

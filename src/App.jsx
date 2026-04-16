@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Menu from './pages/Menu';
 import Checkout from './pages/Checkout';
+import Confirmation from './pages/Confirmation';
 import NavBar from './components/NavBar';
 import './App.css';
 
@@ -86,22 +87,23 @@ function App() {
   return (
     <div className="App">
       {/*passing props*/}
-      <NavBar cartCount={cartCount}/>
-        <main className='main-content'>
+      <NavBar cartCount={cartCount} />
+      <main className='main-content'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu  addToCart={addToCart} />} />
+          <Route path="/menu" element={<Menu addToCart={addToCart} />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/checkout" element={<Checkout cart={cart} 
-          removeFromCart={removeFromCart}
-          updateQuantity={updateQuantity}
-          clearCart={clearCart}
-          cartSubtotal={cartSubtotal}
-          cartTotal={cartTotal}
-          serviceFee={serviceFee} 
+          <Route path="/confirmation" element={<Confirmation />} />
+          <Route path="/checkout" element={<Checkout cart={cart}
+            removeFromCart={removeFromCart}
+            updateQuantity={updateQuantity}
+            clearCart={clearCart}
+            cartSubtotal={cartSubtotal}
+            cartTotal={cartTotal}
+            serviceFee={serviceFee}
           />}
-         />
+          />
         </Routes>
       </main>
     </div>

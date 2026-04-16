@@ -10,12 +10,6 @@
 .menu-card:hover {
   transform:translate(2px);
 }
-/* .menu-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-} */
-
 /* ── IMAGE ── */
 .menu-card-image-wrapper{
   position: relative;
@@ -125,6 +119,3 @@
 .add-to-cart-btn:hover {
   background-color:rgb(5, 58, 5);
 }
-
-
-

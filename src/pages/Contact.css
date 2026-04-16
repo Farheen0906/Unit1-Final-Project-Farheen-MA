@@ -11,30 +11,32 @@
 
 .contact-page-header h1 {
   font-size: 40px;
-  color:rgb(202, 122, 122);
+  color: rgb(202, 122, 122);
   margin-bottom: 10px;
-  
+
 }
 
 .contact-page-header p {
   font-size: 15px;
-  color:rgb(230, 141, 141);
+  color: rgb(230, 141, 141);
 }
 
 .contact-page-layout {
   display: grid;
   align-items: start;
 }
+
 /* Form */
-.contact-form-wrapper{
-  background:rgb(229, 227, 227);
-  border-radius:10px;
-  padding:35px;
+.contact-form-wrapper {
+  background: rgb(229, 227, 227);
+  border-radius: 10px;
+  padding: 35px;
 }
-.contact-form-title{
+
+.contact-form-title {
   font-size: 22px;
   margin-bottom: 24px;
-  color:rgb(113, 34, 34);
+  color: rgb(113, 34, 34);
 }
 
 .contact-form {
@@ -42,6 +44,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .form-field {
   display: flex;
   flex-direction: column;
@@ -52,32 +55,33 @@
 .form-field label {
   font-size: 15px;
   font-weight: 500;
-  color:rgb(161, 51, 15);
- 
+  color: rgb(161, 51, 15);
+
 }
 
 .form-field input,
 .form-field select,
 .form-field textarea {
   padding: 12px 14px;
-  border:1px solid;
-  border-color:floralwhite;
+  border: 1px solid;
+  border-color: floralwhite;
   border-radius: 8px;
   font-size: 14px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color:grey;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
   resize: vertical;
 }
 
 .form-field input:focus,
 .form-field select:focus,
 .form-field textarea:focus {
-  border-color:rgb(181, 97, 13);
-  outline: none;/* Removes the default browser glow */
+  border-color: rgb(181, 97, 13);
+  outline: none;
+  /* Removes the default browser glow */
 }
 
 .form-submit-btn {
-  background-color:maroon;
+  background-color: maroon;
   color: white;
   border: none;
   padding: 14px 40px;
@@ -89,21 +93,50 @@
 
 .form-submit-btn:hover {
   background-color: rgb(78, 31, 31);
- }
- 
+}
+
+/* Success confirmation message */
+.contact-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 12px;
+}
+
+.contact-success h3 {
+  font-size: 24px;
+  color: rgb(34, 112, 34);
+  margin: 0;
+}
+
+.contact-success p {
+  font-size: 16px;
+  color: rgb(70, 70, 70);
+  max-width: 340px;
+}
+
 @media (max-width: 768px) {
+
   /* Tablets */
   .contact-page {
     padding: 32px 20px 60px;
-    background-color: blue;
+  }
+
+  .contact-page-header h1 {
+    font-size: 32px;
   }
 }
 
 
-@media (max-width: 480px) {
-  /* Small phones */
+@media (max-width: 768px) {
+
   .contact-page {
     padding: 14px 10px 30px;
-    background-color: red;
+  }
+
+  .contact-page-header h1 {
+    font-size: 26px;
   }
 }

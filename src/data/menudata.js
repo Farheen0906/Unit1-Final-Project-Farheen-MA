@@ -1,6 +1,4 @@
 //mock data for the menu card
-//Defining categories to filter and display the selected items
-export const categories = ['All', 'Salads', 'Vegetarian', 'Seafood', 'Gluten Free', 'Poultry'];
 export const menuItems = [
   // ------------------- SALADS ------------------------
   {
@@ -131,7 +129,6 @@ export const menuItems = [
     price: 65,
     image: 'src/assets/Roasted-Chicken-with-Garlic-Herbs-05.jpg',
   },
-
   {
     id: 13,
     title: 'Honey Garlic Chicken Thighs',
@@ -163,12 +160,3 @@ export const menuItems = [
     image: 'https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&q=80',
   },
 ];
-
-// creating a callback function to filter the selected menu item for the whole menuItems array.
-export const getByCategory = (category) => {
-    if (category === 'All') {
-        return menuItems;
-    } else {
-        return menuItems.filter(item => item.category === category);
-    }
-};

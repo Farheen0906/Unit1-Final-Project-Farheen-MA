@@ -1,7 +1,7 @@
 .about-page {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 48px 40px 80px ;
+  padding: 48px 40px 80px;
 }
 
 .about-page-title {
@@ -11,59 +11,59 @@
 
 .about-page-title h1 {
   font-size: 40px;
-  color:darkred;
+  color: darkred;
   margin-bottom: 12px;
-font-family:serif;
+  font-family: serif;
 }
 
 .about-page-tagline {
   font-size: 20px;
   color: rgb(154, 74, 74);
- font-family: cursive;
+  font-family: cursive;
   text-align: right;
   font-weight: bolder;
 }
 
 .about-page-content {
   display: grid;
-  place-items:center;
-  font-family:fantasy;
-  color:rgb(221, 74, 74);
+  place-items: center;
+  font-family: fantasy;
+  color: rgb(221, 74, 74);
   font-size: larger;
   gap: 32px;
   margin-bottom: 20px;
-  background:rgb(235, 233, 233);
+  background: rgb(235, 233, 233);
   border-radius: grey;
-  padding:36px 28px;
+  padding: 36px 28px;
   text-align: center;
 }
-.about-page-content :hover{
-transform: translate(1px);
-color:firebrick;
+
+.about-page-content :hover {
+  transform: translate(1px);
+  color: firebrick;
 }
 
-.about-contact-btn{
-    display: grid;
-   margin: 0 auto; /* Centers horizontally */
-   padding: 14px 34px;
-   border-radius: 50px;
+.about-contact-btn {
+  display: grid;
+  margin: 0 auto;
+  /* Centers horizontally */
+  padding: 14px 34px;
+  border-radius: 50px;
   font-size: 15px;
   font-weight: 900;
   color: rgb(138, 12, 12);
   font-weight: 500;
   border-color: transparent;
   background-color: rgb(237, 179, 179);
-   
+
 }
+
 .about-contact-btn:hover {
   background-color: rgb(130, 76, 76);
- 
+
 }
-
-
-
-
-@media (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-page {
     padding: 32px 20px 60px;
   }
