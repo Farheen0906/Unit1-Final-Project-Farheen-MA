@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import "./OrderForm.css";
 
-function OrderForm({ setOrderPlaced }) {
+function OrderForm({clearCart}) {
   //Form state
   const [formData, setFormData] = useState({
     fullName: '',
@@ -20,7 +20,7 @@ function OrderForm({ setOrderPlaced }) {
   };
   const handlePlaceOrder = (event) => {
     event.preventDefault();
-    // redirect to confirmation page
+    clearCart();
     navigate("/confirmation");
   };
 

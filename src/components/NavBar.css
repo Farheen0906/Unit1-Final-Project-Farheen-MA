@@ -7,7 +7,7 @@
     color: rgb(73, 69, 69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 40px;
-    position:relative;
+    position: relative;
 }
 
 .navbar_icon {
@@ -71,3 +71,46 @@
     font-size: 15px;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar_title {
+        font-size: 18px;
+    }
+
+    .navbar_tagline {
+        font-size: 8px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        /* Links stacked */
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        width: 100%;
+        padding: 8px;
+    }
+}

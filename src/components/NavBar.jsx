@@ -12,7 +12,7 @@ function NavBar({ cartCount }) {
         <span className='navbar_title'>HomeCookeD</span>
         <span className='navbar_tagline'> 🚚 Delivered To Your Doorstep</span>
 
-      </div>
+</div>
       {/* Navigation bar */}
       <div className='navbar-links'>
         <Link to="/" className='nav-link'>Home</Link>

@@ -1,6 +1,6 @@
 import OrderForm from "../components/OrderForm";
 import './Checkout.css';
-
+import Button from "../components/Button";
 // Props from App.jsx:
 // cart, removeFromCart, updateQuantity, clearCart, subtotal, serviceFee, total
 function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
@@ -13,7 +13,7 @@ function Checkout({ cart, removeFromCart, updateQuantity, clearCart,
       <div className="checkout-page-layout">
         {/* Left column - contact form */}
         <div className="checkout-form">
-          <OrderForm />
+          <OrderForm clearCart={clearCart}/>
         </div>
         <div className="checkout-body">
           {cart.length === 0 ? (
