@@ -1,6 +1,6 @@
 import './Confirmation.css';
 
-function Confirmation({cartCount}) {
+function Confirmation() {
      return (
     <div className="order-success">
       <h2>🎉 Order Confirmed!</h2>
